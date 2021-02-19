@@ -15,13 +15,15 @@
 </head>
 <body>
     <div class="header">
-        <div class="logo"><a href="index.html"></a></div>
-        <a class="hamburger">
-            <span class="hamburger_span"></span>
-            <span class="hamburger_span"></span>
-            <span class="hamburger_span"></span>
-        </a>
-        <div class="menu">
+        <div class="logo logo-scale"><span><a href="index.html"></a></span></div>
+        <div id="rel">
+            <a class="hamburger hide-for-desktop" href="#" onclick="show_menu()">
+                <span class="hamburger_span"></span>
+                <span class="hamburger_span"></span>
+                <span class="hamburger_span"></span>
+            </a>
+        </div>
+        <div class="menu hide-for-mobile">
             <a href="products.html" class="menu_a">Termékek</a>
             <a href="shipping.html" class="menu_a">Szállítás</a>
             <a href="contact.html" class="menu_a">Kapcsolat</a>
@@ -35,7 +37,21 @@
             Blanditiis odit eum voluptatum a, provident incidunt quisquam amet tenetur labore necessitatibus enim! Corporis odit ea similique alias doloremque. Labore voluptatem excepturi maiores suscipit accusamus voluptatibus dolorem ab quo rem.
             Natus quasi velit temporibus veniam neque distinctio accusamus architecto commodi ad quaerat eligendi facilis voluptatem nihil ducimus, officia quas consequuntur totam optio error possimus quibusdam, blanditiis inventore? Voluptate, dolorum temporibus!</p>
         </div>
+        <div id="rounded" class="panel-scale">
+            <div class="body_blue"></div>
+            <div class="body_cream"></div>
+        </div>
+        <div class="body_products"></div>
     </div>
     <script src="app/js/script.js"></script>
 </body>
+<footer>
+    <div class="footer">
+        <a href="#" class="footer_link">Közösségi oldalaink</a>
+        <a href="#" class="footer_link">Gyakori kérdések</a>
+        <a href="#" class="footer_link">Adatvédelmi tájékoztató</a>
+        <a href="#" class="footer_link">ÁSZF</a>
+        <a href="#" class="footer_link">Impresszum</a>
+    </div>
+</footer>
 </html>

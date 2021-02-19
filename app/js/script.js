@@ -6,3 +6,7 @@ $(document).ready(function(){
     });
 });
 
+
+function show_menu(){
+    console.log("befostam");
+}
