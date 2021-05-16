@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+html,body{
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    width: 100%;
+    background-color: rgba(39, 28, 133, 0.795);
+    color: white;
+    font-size: 20px;
+}
+
+#menu{
+    display: block;
+    text-align: center;
+}
+
+#start{
+    display: block;
+    height: 500px;
+    width: 500px;
+    border: 3px solid black;
+    position: absolute;
+    left: 675px;
+    box-shadow: 5px 10px rgba(47, 33, 177, 0.5);
+    background-color: rgba(39, 28, 133, 0.795);
+}
+#won{
+    display: block;
+    height: 500px;
+    width: 500px;
+    border: 3px solid black;
+    position: absolute;
+    left: 675px;
+}
+
+#lost{
+    display: block;
+    height: 500px;
+    width: 500px;
+    border: 3px solid black;
+    position: absolute;
+    left: 675px;
+}
+
+#game{
+    position: absolute;
+    height: 100%;
+}
+
+#start-page{
+    position: relative;
+    left: -47px;
+    top: 200px;
+}
+
+#end-page{
+    position: relative;
+    top: 50px;
+}
+
+#restart{
+    position: relative;
+    top: 100px;
+    left: 85px;
+}
+
+#score{
+    position: relative;
+    left: 45px;
+    top: -600px;
+}
+
+#game-screen{
+    background-image: url("assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 250px;
+    width: 1400px;
+    height: 900px;
+    border: 3px solid black;
+    box-shadow: 5px 10px rgba(47, 33, 177, 0.5);
+}
+
+#game-screen div{
+    width: 100px;
+    height: 100px;
+}
+
+button{
+    background-color:rgba(14, 6, 78, 0.795);
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+button:hover{
+    background-color: rgba(14, 6, 78, 0.397);
+}
+
+.alien{
+    display: block;
+    height: 100px;
+    width: 100px;
+    background-image: url("assets/alien.png");
+    background-size: cover;
+}
+
+.ship{
+    display: block;
+    height: 100px;
+    width: 100px;
+    background-image: url("assets/ship.png");
+    background-size: cover;
+}
+
+.laser{
+    display: block;
+    height: 300px;
+    width: 100px;
+    background-image: url("assets/missile.png");
+    transform: scale(0.4);
+    background-size: cover;
+}
+
+.explosion{
+    display: block;
+    height: 300px;
+    width: 100px;
+    background-image: url("assets/boom.png");
+    transform: scale(0.4);
+    background-size: cover;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.png"/>
+    <script src="http:/code.jquery.com/jquery-latest.js"></script>
+    <script src="script.js"></script>
+    <title>Space Invaders</title>
+</head>
+<body>
+    <div id="menu">
+        <div id="start">
+            <h1>Space Invaders</h1>
+            <button onClick="start()">Kezdés</button>
+            <div class="game-screen">
+                <div id="ranglista">
+                    <h3>Toplista</h3>
+                    <ol id="lista">
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div id="won">
+            <h1>Space Invaders</h1>
+            <h3>Gratulálunk, nyertél!</h3>
+            <button id="restart" onClick="restart()">Újra</button>
+            <button id="start-page" onClick="stateChange('start')">Kezdőlap</button>
+        </div>
+        <div id="lost">
+            <h1>Space Invaders</h1>
+            <h3>Sajnos vesztettél!</h3>
+            <button id="restart" onClick="restart()">Újra</button>
+            <button id="start-page" onClick="stateChange('start')">Kezdőlap</button> 
+        </div>
+    </div>
+    <div id="game">
+        <div id="game-screen" class="game-screen">
+        </div>
+        <button id="start-page" onClick="stateChange('start')">Vissza</button>
+        <p id="score"></p>
+    </div>
+</body>
+</html>
